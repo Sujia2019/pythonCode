@@ -23,38 +23,73 @@
     5.Tuple 元组（是一个只能用来读取的列表，不能添加，删除和修改）
     6.Dictionary 字典（更接近Java中的map）
 
+    一般是通过type()来判断变量是什么类型
+
     输出：
     print()
     格式化输出：
-    %d 表示整数
-    %s 表示字符串
+    %d 表示整数 常用
+    %s 表示字符串 常用
     %c 表示字符
     %o 八进制整数
     %x 十六进制
     %X 十六进制
-    %f 浮点数
+    %f 浮点数 常用
+
+    输入：
+    使用input函数，返回值都是字符串
+    如果需要进行数学计算的话，需要转换为int或者float
+    例如：
+    age = int(input("请输入您的年龄:"))
+    price = float(input("苹果的单价是多少:"))
+    str() 转换为字符串
+    list(x) 将x变成一个列表
+    chr(x) 将一个整数转换为一个字符
+    ord(x) 将一个字符转换为对应的整数
+
+    运算符：
+    // 求除法的整数部分
+    % 求除法的余数部分
+    ** 幂运算
+    没有++自增运算符
 
 
 '''
-print("*"*50)
-age = 20
-name = '王大花'
+print(ord('A'))
+print(chr(97))
+a = 1
+a+=1
+print(a)
+print(a)
+print(9//2)
+print(9/2)
+print(9%2)
+print(2**3)
 
-print("我名字是\t%s,\n我的年龄是%d\n"%(name,age))
+# age = int(input("请输入您的年龄:"))
+# price = float(input("苹果的单价是多少:"))
+# print(age+10)
+# print(type(price))
 
-print("hh")
-a = 10
-if a>10:
-    print("hh")
-elif a>2:
-    print("hh")
-else:
-    pass
-name = 'billl'
-name = "gatmes"
-print(0.1+0.2)
-
-def show(name,a):
-    print(name)
-
-show(123,"哈哈哈")
+# print("*"*50)
+# age = 20
+# name = '王大花'
+# print(type(12.5))
+# print("我名字是\t%s,\n我的年龄是%d\n"%(name,age))
+#
+# print("hh")
+# a = 10
+# if a>10:
+#     print("hh")
+# elif a>2:
+#     print("hh")
+# else:
+#     pass
+# name = 'billl'
+# name = "gatmes"
+# print(0.1+0.2)
+#
+# def show(name,a):
+#     print(name)
+#
+# show(123,"哈哈哈")
